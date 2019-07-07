@@ -17,11 +17,22 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        var d : Int
-        d = 1
-        let c = add(a: 1, b: 2)
-        print(c)
-        print("我一定学得会Swift ! ? ！")
+        
+        
+        //我要去超市了
+        let 如果我去超市 = true
+        //有橘子
+        let 如果看到橘子 = true
+        
+        if 如果我去超市 {
+            
+            var 要买几个西瓜 = 1
+            
+            if 如果看到橘子 {
+                要买几个西瓜 = 10
+            }
+            print("我要买：\(要买几个西瓜)个西瓜")
+        }
     }
     
     func add(a : Int, b : Int) -> Int {
