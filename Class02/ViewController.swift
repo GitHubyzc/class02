@@ -10,9 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var result : float_t = 10.2
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        var d : Int
+        d = 1
+        let c = add(a: 1, b: 2)
+        print(c)
+        print("我一定学得会Swift ! ? ！")
+    }
+    
+    func add(a : Int, b : Int) -> Int {
+        
+        return a + b
     }
 
 
