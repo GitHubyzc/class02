@@ -10,10 +10,19 @@ import UIKit
 
 class AViewController: UIViewController {
 
+    @IBOutlet weak var lbMsg: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func btnTestClicked(_ sender: UIButton) {
+        print("我按了啥？")
+        lbMsg.text = "我要铜锣烧"
+        lbMsg.textColor = UIColor.red
+        
     }
     
 
