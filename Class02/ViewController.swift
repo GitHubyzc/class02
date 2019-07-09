@@ -10,10 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var lbMsg: UILabel!
     var result : float_t = 10.2
     
     
-    
+    @IBAction func btnTestClicked(_ sender: UIButton) {
+        print("我按了啥？")
+        lbMsg.text = "我要铜锣烧"
+        lbMsg.textColor = UIColor.red
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
