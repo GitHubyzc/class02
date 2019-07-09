@@ -9,23 +9,41 @@
 import UIKit
 
 class AViewController: UIViewController {
+    
+    @IBOutlet weak var lbXLMsg: UITextField!
+    
 
-    @IBOutlet weak var lbMsg: UITextField!
+
+    @IBOutlet weak var btnHiBottomConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func btnTestClicked(_ sender: UIButton) {
-        print("我按了啥？")
-        lbMsg.text = "我要铜锣烧"
-        lbMsg.textColor = UIColor.red
+    //腾讯
+    @objc func keyboardWillShow(notification: NSNotification) {
+        let keyboardHeight = (notification.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue.height
+        print("猜猜看：\(keyboardHeight)")
+        
+        btnHiBottomConstraint.constant = keyboardHeight
         
     }
     
-
+//    @objc func keyboardWillHide(notification: NSNotification) {
+//        let keyboardHeight = (notification.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue.height
+//        print(keyboardHeight)
+//    }
+    
+    @IBAction func btnTestClicked(_ sender: UIButton) {
+        print("我按了啥？")
+        lbXLMsg.text = "我要铜锣烧"
+        lbXLMsg.textColor = UIColor.red
+        
+    }
+    
     /*
     // MARK: - Navigation
 
