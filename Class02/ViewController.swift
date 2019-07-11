@@ -22,8 +22,7 @@ class ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
+        // Do any additional setup after loading the view.        
         
         //我要去超市了
         let 如果我去超市 = true
@@ -45,6 +44,8 @@ class ViewController: UIViewController {
         
         return a + b
     }
+    
+   
 
 
 }
