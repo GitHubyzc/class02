@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jR1-St-RZy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nAJ-fW-58G">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -146,10 +146,10 @@
             </objects>
             <point key="canvasLocation" x="1831.8840579710147" y="-1481.25"/>
         </scene>
-        <!--View Controller-->
+        <!--Master View Controller-->
         <scene sceneID="doV-bV-twv">
             <objects>
-                <viewController id="HL8-Od-087" sceneMemberID="viewController">
+                <viewController id="HL8-Od-087" customClass="MasterViewController" customModule="Class02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sDY-Oh-I88">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -163,6 +163,7 @@
                         <constraints>
                             <constraint firstItem="Vsb-Yu-cmN" firstAttribute="leading" secondItem="sDY-Oh-I88" secondAttribute="leadingMargin" id="7Y4-w9-1cs"/>
                             <constraint firstItem="Vsb-Yu-cmN" firstAttribute="trailing" secondItem="sDY-Oh-I88" secondAttribute="trailingMargin" id="NEd-7V-ciy"/>
+                            <constraint firstItem="Vsb-Yu-cmN" firstAttribute="trailing" secondItem="sDY-Oh-I88" secondAttribute="trailingMargin" id="TRC-dx-mKG"/>
                             <constraint firstItem="Vsb-Yu-cmN" firstAttribute="top" secondItem="sDY-Oh-I88" secondAttribute="topMargin" id="aD6-7U-STR"/>
                             <constraint firstAttribute="bottomMargin" secondItem="Vsb-Yu-cmN" secondAttribute="bottom" id="co3-38-tF2"/>
                         </constraints>
@@ -286,10 +287,10 @@
             </objects>
             <point key="canvasLocation" x="4576.5625" y="-1482.421875"/>
         </scene>
-        <!--View Controller-->
+        <!--My Web View Controller-->
         <scene sceneID="Y9M-ty-zVm">
             <objects>
-                <viewController id="bzz-mi-GkP" sceneMemberID="viewController">
+                <viewController id="bzz-mi-GkP" customClass="MyWebViewController" customModule="Class02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cmq-Sw-Sn7">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -317,10 +318,10 @@
             </objects>
             <point key="canvasLocation" x="5557.8125" y="-1016.0156249999999"/>
         </scene>
-        <!--View Controller-->
+        <!--My Map View Controller-->
         <scene sceneID="wOR-wP-IBk">
             <objects>
-                <viewController id="nAJ-fW-58G" sceneMemberID="viewController">
+                <viewController id="nAJ-fW-58G" customClass="MyMapViewController" customModule="Class02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="14b-yR-xwa">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
